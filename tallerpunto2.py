@@ -20,17 +20,17 @@ problema += 1.2 * x1 + 1.1 * x2 + 3.4 * x3 >= 80, "Proteínas"
 # Resolver el problema
 problema.solve()
 print("Estado:", pulp.LpStatus[problema.status])
-print("Cantidad óptima de manzanas:", x1.varValue)
-print("Cantidad óptima de plátanos:", x2.varValue)
-print("Cantidad óptima de yogur:", x3.varValue)
-print("Costo total mínimo:", pulp.value(problema.objective))
+print("Cantidad óptima de manzanas a comer por dia:", x1.varValue)
+print("Cantidad óptima de plátanos a comer por dia:", x2.varValue)
+print("Cantidad óptima de yogur a comer por dia:", x3.varValue)
+print("Costo total mínimo diario:", pulp.value(problema.objective))
 
 #El resultado obtenido muestra que el problema de optimización es infactible, lo que significa que no es 
 #posible encontrar una solución que cumpla con todas las restricciones del problema. Sin embargo, los valores que 
 #se muestran para "Cantidad óptima de manzanas," "Cantidad óptima de plátanos," "Cantidad óptima de yogur" y 
 #"Costo total mínimo" no son relevantes en este contexto, ya que el problema es infactible y estos valores no tienen
 #un significado realista. Esos valores no son útiles en este caso, ya que no cumplen con las restricciones 
-# del problema, y no deberían ser interpretados como una solución válida en la práctica.
+#del problema, y no deberían ser interpretados como una solución válida en la práctica.
 #Para resolver el problema de infactibilidad, es necesario revisar y ajustar las restricciones del problema, 
 #los requisitos nutricionales o los límites máximos de consumo de alimentos para que sean factibles y representen 
-# una situación realista.
+#una situación realista.
